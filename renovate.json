@@ -1,24 +1,33 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "prCreation": "not-pending",
   "automerge": true,
-  "labels": ["dependencies", "renovate"],
-  "schedule": ["before 5am on the first day of the month"],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "schedule": [
+    "before 5am on the first day of the month"
+  ],
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "dependencyDashboard": true,
   "updateNotScheduled": true,
   "dependencyDashboardApproval": true,
   "packageRules": [
     {
-    "matchDepNames": ["github.com/aws/aws-sdk-go"],
-    "enabled": true,
-    "allowedVersions": "v1.55.4",
-    "packageFile": "go.mod"
-  },
+      "matchDepNames": [
+        "github.com/aws/aws-sdk-go"
+      ],
+      "enabled": true,
+      "allowedVersions": "v1.55.4",
+      "packageFile": "go.mod"
+    },
     {
-      "matchPackageNames": ["github.com/giantswarm/apiextensions/v3"],
+      "matchPackageNames": [
+        "github.com/giantswarm/apiextensions/v3"
+      ],
       "versioning": "semver",
       "enabled": true
     }
