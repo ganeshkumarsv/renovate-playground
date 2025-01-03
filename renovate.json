@@ -12,10 +12,11 @@
   "dependencyDashboardApproval": true,
   "packageRules": [
     {
-      "matchPackageNames": ["github.com/aws/aws-sdk-go"],
-      "versioning": "semver",
-      "enabled": true
-    },
+    "matchDepNames": ["github.com/aws/aws-sdk-go"],
+    "enabled": true,
+    "allowedVersions": "v1.55.4",
+    "packageFile": "go.mod"
+  },
     {
       "matchPackageNames": ["github.com/giantswarm/apiextensions/v3"],
       "versioning": "semver",
